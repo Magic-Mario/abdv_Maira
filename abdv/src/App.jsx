@@ -1,14 +1,15 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import './styles/index.css'
+import { Provider } from 'react-redux';
+import store from './store.js';
+
 
 function App() {
-
   return (
-    <div className="App">
+    <Provider store={store}>
+    <div className="text-blue-500">
      app
     </div>
-  )
+    </Provider>
+  );
 }
 
-export default App
+export default App;
