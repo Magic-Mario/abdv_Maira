@@ -1,12 +1,7 @@
-import { Provider } from "react-redux";
-import store from "./store.js";
-
-function App() {
-  return (
-    <Provider store={store}>
-      <div className="text-blue-500">app</div>
-    </Provider>
-  );
-}
-
-export default App;
+export default function App() {
+    return (
+      <>
+        <div className="text-3xl font-bold underline">Hello World</div>
+      </>
+    );
+  }
